@@ -30,8 +30,8 @@
         ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
 
         .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-        .section-label { font-family: var(--font-cond); font-size: 12px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
-        .section-title { font-family: var(--font-cond); font-size: clamp(32px, 5vw, 56px); font-weight: 900; line-height: 1.05; text-transform: uppercase; color: var(--white); margin-bottom: 16px; }
+        .section-label { font-family: var(--font-cond); font-size: 12px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; text-align: center; }
+        .section-title { font-family: var(--font-cond); font-size: clamp(32px, 5vw, 56px); font-weight: 900; line-height: 1.05; text-transform: uppercase; color: var(--white); margin-bottom: 16px; text-align: center;}
         .section-sub { font-size: 19px; color: var(--gray); max-width: 560px; }
 
         /* BUTTONS */

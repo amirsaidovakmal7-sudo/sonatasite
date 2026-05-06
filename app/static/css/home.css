@@ -439,7 +439,8 @@
           .teacher-side-btn { width: 40px; height: 40px; font-size: 18px; }
           .teacher-side-btn.prev { left: 0; }
           .teacher-side-btn.next { right: 0; }
-          .teacher-video-frame { width: 320px; }
+          .teacher-video-frame { width: 100%; max-width: 100%; }
+          .teacher-slide-top { padding: 16px 16px 12px; }
           .teacher-info-side { padding: 20px 24px 28px; }
           .teacher-slide-name { font-size: 22px; }
           .teacher-slide-desc { font-size: 15px; }

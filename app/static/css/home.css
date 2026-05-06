@@ -849,4 +849,6 @@
           .modal-box { padding: 36px 24px; }
           .btn-primary { padding: 14px 20px; font-size: 13px; }
           .btn-primary .tg-icon { width: 17px; height: 17px; }
+          .card-desc { font-size: 15px; }
+          .card-name { font-size: 20px; }
         }

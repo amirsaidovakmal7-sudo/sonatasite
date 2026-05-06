@@ -846,4 +846,6 @@
           .register-inner { grid-template-columns: 1fr; gap: 40px; }
           .register-card { padding: 32px 24px; }
           .modal-box { padding: 36px 24px; }
+          .btn-primary { padding: 14px 20px; font-size: 13px; }
+          .btn-primary .tg-icon { width: 17px; height: 17px; }
         }

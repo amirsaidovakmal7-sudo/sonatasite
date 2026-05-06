@@ -5,7 +5,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 bot = telebot.TeleBot('8240591162:AAGOkbKm-F__4Ayeq6MndTcYSiL3pJ23K7E')
-group_id = -5259938327
+group_id = -1003798480119
 
 
 

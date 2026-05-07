@@ -842,7 +842,7 @@
         }
         @media (max-width: 640px) {
           .pricing-grid { grid-template-columns: 1fr; }
-          .direction-card { width: calc(100vw - 120px); }
+          .direction-card { width: calc(100vw - 130px); }
           .section-title { font-size: 32px; }
           .register-inner { grid-template-columns: 1fr; gap: 40px; }
           .register-card { padding: 32px 24px; }

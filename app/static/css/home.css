@@ -852,3 +852,35 @@
           .card-desc { font-size: 15px; }
           .card-name { font-size: 20px; }
         }
+                /* LANGUAGE SWITCHER */
+        .lang-switcher {
+          display: flex;
+          align-items: center;
+          gap: 2px;
+          background: rgba(255,255,255,0.08);
+          border-radius: 6px;
+          padding: 3px;
+          flex-shrink: 0;
+        }
+        .lang-btn {
+          font-family: var(--font-cond);
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: rgba(255,255,255,0.5);
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          padding: 5px 10px;
+          border-radius: 4px;
+          transition: all 0.2s ease;
+        }
+        .lang-btn.active {
+          background: var(--accent);
+          color: var(--white);
+        }
+        .lang-btn:hover:not(.active) {
+          color: var(--white);
+          background: rgba(255,255,255,0.1);
+        }

@@ -182,17 +182,23 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                 <span class="logo logo-fallback" style="display:none;">Sonata<span>.</span></span>
             </a>
             <ul class="header-nav">
-                <li><a href="#directions">Направления</a></li>
-                <li><a href="#trial">Бесплатный урок</a></li>
-                <li><a href="#pricing">Стоимость</a></li>
-                <li><a href="#teachers">Преподаватели</a></li>
-                <li><a href="#reviews">Отзывы</a></li>
-                <li><a href="#address">Адрес</a></li>
+                <li><a href="#directions" data-ru="Направления" data-uz="Yo'nalishlar">Направления</a></li>
+                <li><a href="#trial" data-ru="Бесплатный урок" data-uz="Bepul dars">Бесплатный урок</a></li>
+                <li><a href="#pricing" data-ru="Стоимость" data-uz="Narxlar">Стоимость</a></li>
+                <li><a href="#teachers" data-ru="Преподаватели" data-uz="O'qituvchilar">Преподаватели</a></li>
+                <li><a href="#reviews" data-ru="Отзывы" data-uz="Sharhlar">Отзывы</a></li>
+                <li><a href="#address" data-ru="Адрес" data-uz="Manzil">Адрес</a></li>
             </ul>
             <div class="header-right">
+                <!-- LANGUAGE SWITCHER -->
+                <div class="lang-switcher">
+                    <button class="lang-btn active" id="btnRu" onclick="setLang('ru')">RU</button>
+                    <button class="lang-btn" id="btnUz" onclick="setLang('uz')">UZ</button>
+                </div>
                 <a href="#register" class="btn-primary"
                    onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'});return false;"
-                   style="padding:10px 20px;font-size:13px;">
+                   style="padding:10px 20px;font-size:13px;"
+                   data-ru="Записаться" data-uz="Ro'yxatdan o'tish">
                     <svg class="tg-icon" viewBox="0 0 24 24">
                         <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                     </svg>
@@ -206,16 +212,21 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
 
 <div class="mobile-menu" id="mobileMenu">
     <ul>
-        <li><a href="#directions" onclick="closeMobile()">Направления</a></li>
-        <li><a href="#trial" onclick="closeMobile()">Пробный урок</a></li>
-        <li><a href="#pricing" onclick="closeMobile()">Стоимость</a></li>
-        <li><a href="#teachers" onclick="closeMobile()">Преподаватели</a></li>
-        <li><a href="#reviews" onclick="closeMobile()">Отзывы</a></li>
-        <li><a href="#address" onclick="closeMobile()">Адрес</a></li>
+        <li><a href="#directions" onclick="closeMobile()" data-ru="Направления" data-uz="Yo'nalishlar">Направления</a></li>
+        <li><a href="#trial" onclick="closeMobile()" data-ru="Пробный урок" data-uz="Sinov darsi">Пробный урок</a></li>
+        <li><a href="#pricing" onclick="closeMobile()" data-ru="Стоимость" data-uz="Narxlar">Стоимость</a></li>
+        <li><a href="#teachers" onclick="closeMobile()" data-ru="Преподаватели" data-uz="O'qituvchilar">Преподаватели</a></li>
+        <li><a href="#reviews" onclick="closeMobile()" data-ru="Отзывы" data-uz="Sharhlar">Отзывы</a></li>
+        <li><a href="#address" onclick="closeMobile()" data-ru="Адрес" data-uz="Manzil">Адрес</a></li>
     </ul>
+    <!-- LANGUAGE SWITCHER MOBILE -->
+    <div class="lang-switcher" style="margin: 16px 0;">
+        <button class="lang-btn active" id="btnRuMobile" onclick="setLang('ru')">RU</button>
+        <button class="lang-btn" id="btnUzMobile" onclick="setLang('uz')">UZ</button>
+    </div>
     <br>
     <a href="https://t.me/sonata_tashkent" class="btn-primary" style="width:100%;justify-content:center;"
-       target="_blank">
+       target="_blank" data-ru="Записаться на пробный урок" data-uz="Sinov darsiga yozilish">
         <svg class="tg-icon" viewBox="0 0 24 24">
             <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
         </svg>
@@ -234,13 +245,13 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                    target="_blank" class="hero-tag" style="text-decoration:none;">
                     Ташкент · Мукими 46А
                 </a>
-                <h1 class="hero-title"><span class="line-accent">Sonata</span>Музыкальная<br>школа</h1>
-                <p class="hero-sub">5 направлений. Индивидуальные занятия для детей от 5 лет и взрослых.</p>
+                <h1 class="hero-title"><span class="line-accent">Sonata</span><span data-ru="Музыкальная<br>школа" data-uz="Musiqa<br>maktabi">Музыкальная<br>школа</span></h1>
+                <p class="hero-sub" data-ru="5 направлений. Индивидуальные занятия для детей от 5 лет и взрослых." data-uz="5 yo'nalish. 5 yoshdan kattalar uchun individual darslar.">5 направлений. Индивидуальные занятия для детей от 5 лет и взрослых.</p>
                 <div class="hero-chips">
-                    <div class="hero-chip">Бесплатный пробный урок</div>
-                    <div class="hero-chip">Уроки по 60 минут (индивидуально)</div>
+                    <div class="hero-chip" data-ru="Бесплатный пробный урок" data-uz="Bepul sinov darsi">Бесплатный пробный урок</div>
+                    <div class="hero-chip" data-ru="Уроки по 60 минут (индивидуально)" data-uz="60 daqiqalik darslar (individual)">Уроки по 60 минут (индивидуально)</div>
                 </div>
-                <a href="https://t.me/sonata_tashkent" class="btn-primary" target="_blank">
+                <a href="https://t.me/sonata_tashkent" class="btn-primary" target="_blank" data-ru="Записаться на пробный урок" data-uz="Sinov darsiga yozilish">
                     <svg class="tg-icon" viewBox="0 0 24 24">
                         <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                     </svg>
@@ -278,19 +289,19 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
 
 <!-- MARQUEE -->
 <div class="divider-strip">
-    <div class="divider-strip-inner">
-        <span>Вокал</span><span class="dot">✦</span><span>Гитара</span><span class="dot">✦</span>
-        <span>Фортепиано</span><span class="dot">✦</span><span>Барабаны</span><span class="dot">✦</span>
-        <span>Скрипка</span><span class="dot">✦</span><span>Бесплатный пробный урок</span><span class="dot">✦</span>
-        <span>Индивидуальные занятия</span><span class="dot">✦</span><span>Дети от 5 лет</span><span
+    <div class="divider-strip-inner" id="marqueeInner">
+        <span data-ru="Вокал" data-uz="Vokal">Вокал</span><span class="dot">✦</span><span data-ru="Гитара" data-uz="Gitara">Гитара</span><span class="dot">✦</span>
+        <span data-ru="Фортепиано" data-uz="Fortepiano">Фортепиано</span><span class="dot">✦</span><span data-ru="Барабаны" data-uz="Nog'ora">Барабаны</span><span class="dot">✦</span>
+        <span data-ru="Скрипка" data-uz="Skripka">Скрипка</span><span class="dot">✦</span><span data-ru="Бесплатный пробный урок" data-uz="Bepul sinov darsi">Бесплатный пробный урок</span><span class="dot">✦</span>
+        <span data-ru="Индивидуальные занятия" data-uz="Individual darslar">Индивидуальные занятия</span><span class="dot">✦</span><span data-ru="Дети от 5 лет" data-uz="5 yoshdan bolalar">Дети от 5 лет</span><span
             class="dot">✦</span>
-        <span>Взрослые</span><span class="dot">✦</span>
-        <span>Вокал</span><span class="dot">✦</span><span>Гитара</span><span class="dot">✦</span>
-        <span>Фортепиано</span><span class="dot">✦</span><span>Барабаны</span><span class="dot">✦</span>
-        <span>Скрипка</span><span class="dot">✦</span><span>Бесплатный пробный урок</span><span class="dot">✦</span>
-        <span>Индивидуальные занятия</span><span class="dot">✦</span><span>Дети от 5 лет</span><span
+        <span data-ru="Взрослые" data-uz="Kattalar">Взрослые</span><span class="dot">✦</span>
+        <span data-ru="Вокал" data-uz="Vokal">Вокал</span><span class="dot">✦</span><span data-ru="Гитара" data-uz="Gitara">Гитара</span><span class="dot">✦</span>
+        <span data-ru="Фортепиано" data-uz="Fortepiano">Фортепиано</span><span class="dot">✦</span><span data-ru="Барабаны" data-uz="Nog'ora">Барабаны</span><span class="dot">✦</span>
+        <span data-ru="Скрипка" data-uz="Skripka">Скрипка</span><span class="dot">✦</span><span data-ru="Бесплатный пробный урок" data-uz="Bepul sinov darsi">Бесплатный пробный урок</span><span class="dot">✦</span>
+        <span data-ru="Индивидуальные занятия" data-uz="Individual darslar">Индивидуальные занятия</span><span class="dot">✦</span><span data-ru="Дети от 5 лет" data-uz="5 yoshdan bolalar">Дети от 5 лет</span><span
             class="dot">✦</span>
-        <span>Взрослые</span><span class="dot">✦</span>
+        <span data-ru="Взрослые" data-uz="Kattalar">Взрослые</span><span class="dot">✦</span>
     </div>
 </div>
 
@@ -299,8 +310,8 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
     <div class="container">
         <div class="directions-header fade-up">
             <div>
-                <div class="section-label">Обучение</div>
-                <h2 class="section-title">Выберите<br>направление</h2>
+                <div class="section-label" data-ru="Обучение" data-uz="Ta'lim">Обучение</div>
+                <h2 class="section-title" data-ru="Выберите<br>направление" data-uz="Yo'nalishni<br>tanlang">Выберите<br>направление</h2>
             </div>
         </div>
         <div class="slider-outer">
@@ -335,11 +346,10 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="card-name">Вокал</div>
-                            <div class="card-level">с нуля / с опытом</div>
-                            <p class="card-desc">Учит владеть своим голосом, дыханием и подачей. Занятия помогают снять
-                                зажимы, развить артистичность и уверенность в себе.</p>
-                            <a href="https://t.me/sonata_tashkent" class="card-btn" target="_blank">
+                            <div class="card-name" data-ru="Вокал" data-uz="Vokal">Вокал</div>
+                            <div class="card-level" data-ru="с нуля / с опытом" data-uz="noldan / tajriba bilan">с нуля / с опытом</div>
+                            <p class="card-desc" data-ru="Учит владеть своим голосом, дыханием и подачей. Занятия помогают снять зажимы, развить артистичность и уверенность в себе." data-uz="Ovozni, nafasni va ijroni boshqarishni o'rgatadi. Darslar taranglikni kamaytiradi, artistlikni va o'ziga ishonchni rivojlantiradi.">Учит владеть своим голосом, дыханием и подачей. Занятия помогают снять зажимы, развить артистичность и уверенность в себе.</p>
+                            <a href="https://t.me/sonata_tashkent" class="card-btn" target="_blank" data-ru="Записаться на пробный урок" data-uz="Sinov darsiga yozilish">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                                 </svg>
@@ -374,12 +384,10 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="card-name">Гитара</div>
-                            <div class="card-level">с нуля / с опытом</div>
-                            <p class="card-desc">Дает возможность быстро начать играть любимые песни и аккомпанировать
-                                себе или другим. Занятия развивают чувство ритма, моторику рук и навык уверенно
-                                чувствовать себя в компании и на сцене.</p>
-                            <a href="https://t.me/sonata_tashkent" class="card-btn" target="_blank">
+                            <div class="card-name" data-ru="Гитара" data-uz="Gitara">Гитара</div>
+                            <div class="card-level" data-ru="с нуля / с опытом" data-uz="noldan / tajriba bilan">с нуля / с опытом</div>
+                            <p class="card-desc" data-ru="Дает возможность быстро начать играть любимые песни и аккомпанировать себе или другим. Занятия развивают чувство ритма, моторику рук и навык уверенно чувствовать себя в компании и на сцене." data-uz="Sevimli qo'shiqlarni tez o'ynashni va akkompaniment qilishni imkon beradi. Darslar ritm tuyg'usini, qo'l motorikasini va sahnada o'zini erkin his qilishni rivojlantiradi.">Дает возможность быстро начать играть любимые песни и аккомпанировать себе или другим. Занятия развивают чувство ритма, моторику рук и навык уверенно чувствовать себя в компании и на сцене.</p>
+                            <a href="https://t.me/sonata_tashkent" class="card-btn" target="_blank" data-ru="Записаться на пробный урок" data-uz="Sinov darsiga yozilish">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                                 </svg>
@@ -414,11 +422,10 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="card-name">Фортепиано</div>
-                            <div class="card-level">с нуля / с опытом</div>
-                            <p class="card-desc">Помогает развить чувство ритма, гармонии, слух и понимание структуры
-                                музыки. Занятия одновременно тренирует обе руки и память.</p>
-                            <a href="https://t.me/sonata_tashkent" class="card-btn" target="_blank">
+                            <div class="card-name" data-ru="Фортепиано" data-uz="Fortepiano">Фортепиано</div>
+                            <div class="card-level" data-ru="с нуля / с опытом" data-uz="noldan / tajriba bilan">с нуля / с опытом</div>
+                            <p class="card-desc" data-ru="Помогает развить чувство ритма, гармонии, слух и понимание структуры музыки. Занятия одновременно тренирует обе руки и память." data-uz="Ritm, garmoniya, eshitish va musiqa tuzilishini tushunishni rivojlantirishga yordam beradi. Darslar ikkala qo'l va xotirani bir vaqtda mashq qildiradi.">Помогает развить чувство ритма, гармонии, слух и понимание структуры музыки. Занятия одновременно тренирует обе руки и память.</p>
+                            <a href="https://t.me/sonata_tashkent" class="card-btn" target="_blank" data-ru="Записаться на пробный урок" data-uz="Sinov darsiga yozilish">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.277-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                                 </svg>
@@ -453,11 +460,10 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="card-name">Барабаны</div>
-                            <div class="card-level">с нуля / с опытом</div>
-                            <p class="card-desc">Развивают чувство ритма, концентрацию и физическую координацию всего
-                                тела. Вы научитесь держать темп, быстро реагировать и выражать энергию через музыку.</p>
-                            <a href="https://t.me/sonata_tashkent" class="card-btn" target="_blank">
+                            <div class="card-name" data-ru="Барабаны" data-uz="Nog'ora">Барабаны</div>
+                            <div class="card-level" data-ru="с нуля / с опытом" data-uz="noldan / tajriba bilan">с нуля / с опытом</div>
+                            <p class="card-desc" data-ru="Развивают чувство ритма, концентрацию и физическую координацию всего тела. Вы научитесь держать темп, быстро реагировать и выражать энергию через музыку." data-uz="Ritm tuyg'usi, konsentratsiya va butun tana koordinatsiyasini rivojlantiradi. Tempni ushlab turish, tez reaksiya qilish va musiqa orqali energiyani ifodalashni o'rganasiz.">Развивают чувство ритма, концентрацию и физическую координацию всего тела. Вы научитесь держать темп, быстро реагировать и выражать энергию через музыку.</p>
+                            <a href="https://t.me/sonata_tashkent" class="card-btn" target="_blank" data-ru="Записаться на пробный урок" data-uz="Sinov darsiga yozilish">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                                 </svg>
@@ -492,11 +498,10 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="card-name">Скрипка</div>
-                            <div class="card-level">с нуля / с опытом</div>
-                            <p class="card-desc">Развивает тонкий слух, координацию и умение точно чувствовать
-                                интонацию. Занятия тренируют усидчивость и внимание к деталям.</p>
-                            <a href="https://t.me/sonata_tashkent" class="card-btn" target="_blank">
+                            <div class="card-name" data-ru="Скрипка" data-uz="Skripka">Скрипка</div>
+                            <div class="card-level" data-ru="с нуля / с опытом" data-uz="noldan / tajriba bilan">с нуля / с опытом</div>
+                            <p class="card-desc" data-ru="Развивает тонкий слух, координацию и умение точно чувствовать интонацию. Занятия тренируют усидчивость и внимание к деталям." data-uz="Nozik eshitish, koordinatsiya va intonatsiyani aniq his qilishni rivojlantiradi. Darslar sabr-toqat va tafsilotlarga e'tiborni mashq qildiradi.">Развивает тонкий слух, координацию и умение точно чувствовать интонацию. Занятия тренируют усидчивость и внимание к деталям.</p>
+                            <a href="https://t.me/sonata_tashkent" class="card-btn" target="_blank" data-ru="Записаться на пробный урок" data-uz="Sinov darsiga yozilish">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                                 </svg>
@@ -508,7 +513,7 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
             <button class="slider-side-btn next" id="nextBtn">&#8594;</button>
         </div>
         <div style="text-align:center; margin-top:48px;" class="fade-up">
-            <a href="https://t.me/sonata_tashkent" class="btn-primary" target="_blank">
+            <a href="https://t.me/sonata_tashkent" class="btn-primary" target="_blank" data-ru="Записаться на пробный урок" data-uz="Sinov darsiga yozilish">
                 <svg class="tg-icon" viewBox="0 0 24 24">
                     <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                 </svg>
@@ -523,49 +528,44 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
     <div class="container">
         <div class="trial-grid">
             <div>
-                <div class="section-label fade-up">Первый шаг</div>
-                <h2 class="section-title fade-up">Бесплатный<br>пробный<br>урок</h2>
-                <p class="section-sub fade-up" style="margin-bottom:8px;">За 30 минут поймете: подходит ли инструмент,
-                    педагог и программа</p>
+                <div class="section-label fade-up" data-ru="Первый шаг" data-uz="Birinchi qadam">Первый шаг</div>
+                <h2 class="section-title fade-up" data-ru="Бесплатный<br>пробный<br>урок" data-uz="Bepul<br>sinov<br>darsi">Бесплатный<br>пробный<br>урок</h2>
+                <p class="section-sub fade-up" style="margin-bottom:8px;" data-ru="За 30 минут поймете: подходит ли инструмент, педагог и программа" data-uz="30 daqiqada tushunasiz: asbob, o'qituvchi va dastur mos keladimi">За 30 минут поймете: подходит ли инструмент, педагог и программа</p>
                 <div class="trial-steps">
                     <div class="trial-step">
                         <div class="step-num">1</div>
-                        <div class="step-content"><h4>знакомство с преподавателем</h4>
-                            <p>Узнаете, как проходят занятия, познакомитесь с педагогом и поймете, насколько вам
-                                комфортна атмосфера и подача.</p></div>
+                        <div class="step-content">
+                            <h4 data-ru="знакомство с преподавателем" data-uz="O'qituvchi bilan tanishish">знакомство с преподавателем</h4>
+                            <p data-ru="Узнаете, как проходят занятия, познакомитесь с педагогом и поймете, насколько вам комфортна атмосфера и подача." data-uz="Darslar qanday o'tishini bilib olasiz, o'qituvchi bilan tanishasiz va atmosfera hamda uslub sizga qanchalik qulay ekanini tushunasiz.">Узнаете, как проходят занятия, познакомитесь с педагогом и поймете, насколько вам комфортна атмосфера и подача.</p>
+                        </div>
                     </div>
                     <div class="trial-step" style="transition-delay:0.15s">
                         <div class="step-num">2</div>
-                        <div class="step-content"><h4>Сразу практика</h4>
-                            <p><strong>Если вы начинающий:</strong> познакомитесь с инструментом, форматом занятий,
-                                выполните
-                                простые
-                                упражнения и поймёте, насколько вам интересно направление.
-                                <br><br>
-                                <strong>Если уже есть опыт:</strong> преподаватель даст более точные задачи, чтобы
-                                оценить уровень
-                                подготовки и показать, как можно расти дальше.</p></div>
+                        <div class="step-content">
+                            <h4 data-ru="Сразу практика" data-uz="Darhol amaliyot">Сразу практика</h4>
+                            <p data-ru="<strong>Если вы начинающий:</strong> познакомитесь с инструментом, форматом занятий, выполните простые упражнения и поймёте, насколько вам интересно направление.<br><br><strong>Если уже есть опыт:</strong> преподаватель даст более точные задачи, чтобы оценить уровень подготовки и показать, как можно расти дальше." data-uz="<strong>Agar boshlang'ich bo'lsangiz:</strong> asbob, dars formati bilan tanishasiz, oddiy mashqlar bajarasiz va yo'nalish qiziqarlimi yoki yo'qligini tushunasiz.<br><br><strong>Agar tajriba bo'lsa:</strong> o'qituvchi tayyorgarlik darajasini baholash va keyingi o'sish yo'llarini ko'rsatish uchun aniqroq vazifalar beradi."><strong>Если вы начинающий:</strong> познакомитесь с инструментом, форматом занятий, выполните простые упражнения и поймёте, насколько вам интересно направление.<br><br><strong>Если уже есть опыт:</strong> преподаватель даст более точные задачи, чтобы оценить уровень подготовки и показать, как можно расти дальше.</p>
+                        </div>
                     </div>
                     <div class="trial-step" style="transition-delay:0.3s">
                         <div class="step-num">3</div>
-                        <div class="step-content"><h4>План обучения</h4>
-                            <p>Получите пошаговый план занятий на месяц. Сможете задать вопросы преподавателю и
-                                администрации по обучению, расписанию и формату занятий.</p></div>
+                        <div class="step-content">
+                            <h4 data-ru="План обучения" data-uz="O'qish rejasi">План обучения</h4>
+                            <p data-ru="Получите пошаговый план занятий на месяц. Сможете задать вопросы преподавателю и администрации по обучению, расписанию и формату занятий." data-uz="Bir oylik bosqichma-bosqich dars rejasini olasiz. O'qituvchi va administratsiyaga o'qish, jadval va dars formati bo'yicha savollar bera olasiz.">Получите пошаговый план занятий на месяц. Сможете задать вопросы преподавателю и администрации по обучению, расписанию и формату занятий.</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="trial-right fade-up">
-                <div class="trial-right-title">На пробном уроке <p>познакомитесь со школой, выучите базовые приёмы игры на
-                    инструменте или вокала и получите план занятий на месяц</p>
+                <div class="trial-right-title" data-ru="На пробном уроке" data-uz="Sinov darsida">На пробном уроке
+                    <p data-ru="познакомитесь со школой, выучите базовые приёмы игры на инструменте или вокала и получите план занятий на месяц" data-uz="maktab bilan tanishasiz, asbob chalish yoki vokal asosiy usullarini o'rganasiz va bir oylik dars rejasini olasiz">познакомитесь со школой, выучите базовые приёмы игры на инструменте или вокала и получите план занятий на месяц</p>
                 </div>
 
                 <div class="trial-note">
                     <div class="trial-note-icon">🎸</div>
-                    <p><strong>Все инструменты и оборудование есть в школе</strong> — гитары, фортепиано, барабаны,
-                        скрипки. Для вокала: микрофон и аппаратура. Приходите с пустыми руками.</p>
+                    <p data-ru="<strong>Все инструменты и оборудование есть в школе</strong> — гитары, фортепиано, барабаны, скрипки. Для вокала: микрофон и аппаратура. Приходите с пустыми руками." data-uz="<strong>Barcha asboblar va jihozlar maktabda mavjud</strong> — gitaralar, fortepiano, nog'oralar, skripkalar. Vokal uchun: mikrofon va apparatura. Bo'sh qo'l bilan keling."><strong>Все инструменты и оборудование есть в школе</strong> — гитары, фортепиано, барабаны, скрипки. Для вокала: микрофон и аппаратура. Приходите с пустыми руками.</p>
                 </div>
                 <a href="https://t.me/sonata_tashkent" class="btn-primary" style="width:100%;justify-content:center;"
-                   target="_blank">
+                   target="_blank" data-ru="Записаться на пробный урок" data-uz="Sinov darsiga yozilish">
                     <svg class="tg-icon" viewBox="0 0 24 24">
                         <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                     </svg>
@@ -580,69 +580,68 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
 <section id="pricing">
     <div class="container">
         <div class="pricing-header fade-up">
-            <div class="section-label">Тарифы</div>
-            <h2 class="section-title">Стоимость занятий<br>(в месяц)</h2>
-            <p class="section-sub">Все уроки индивидуальные, 60 минут.</p>
+            <div class="section-label" data-ru="Тарифы" data-uz="Tariflar">Тарифы</div>
+            <h2 class="section-title" data-ru="Стоимость занятий<br>(в месяц)" data-uz="Darslar narxi<br>(oyiga)">Стоимость занятий<br>(в месяц)</h2>
+            <p class="section-sub" data-ru="Все уроки индивидуальные, 60 минут." data-uz="Barcha darslar individual, 60 daqiqa.">Все уроки индивидуальные, 60 минут.</p>
         </div>
         <div class="pricing-grid">
             <div class="price-card fade-up">
-                <div class="price-tag">Старт</div>
+                <div class="price-tag" data-ru="Старт" data-uz="Start">Старт</div>
                 <div class="price-name">Пьеса</div>
-                <div class="price-amount">920 000 <span>сум</span></div>
-                <div class="price-freq">1 раз в неделю</div>
+                <div class="price-amount">920 000 <span data-ru="сум" data-uz="so'm">сум</span></div>
+                <div class="price-freq" data-ru="1 раз в неделю" data-uz="Haftada 1 marta">1 раз в неделю</div>
                 <div class="price-divider"></div>
                 <ul class="price-detail">
-                    <li>4 урока с преподавателем</li>
-                    <li>4 самостоятельных занятия</li>
+                    <li data-ru="4 урока с преподавателем" data-uz="O'qituvchi bilan 4 dars">4 урока с преподавателем</li>
+                    <li data-ru="4 самостоятельных занятия" data-uz="4 mustaqil mashg'ulot">4 самостоятельных занятия</li>
                 </ul>
                 <br><a href="https://t.me/sonata_tashkent" class="btn-outline"
-                       style="width:100%;justify-content:center;" target="_blank">Выбрать</a>
+                       style="width:100%;justify-content:center;" target="_blank" data-ru="Выбрать" data-uz="Tanlash">Выбрать</a>
             </div>
             <div class="price-card fade-up" style="transition-delay:0.1s">
-                <div class="price-tag">Популярный</div>
+                <div class="price-tag" data-ru="Популярный" data-uz="Mashhur">Популярный</div>
                 <div class="price-name">Этюд</div>
-                <div class="price-amount">1 700 000 <span>сум</span></div>
-                <div class="price-freq">2 раза в неделю</div>
+                <div class="price-amount">1 700 000 <span data-ru="сум" data-uz="so'm">сум</span></div>
+                <div class="price-freq" data-ru="2 раза в неделю" data-uz="Haftada 2 marta">2 раза в неделю</div>
                 <div class="price-divider"></div>
                 <ul class="price-detail">
-                    <li>8 уроков с преподавателем</li>
-                    <li>8 самостоятельных занятий</li>
+                    <li data-ru="8 уроков с преподавателем" data-uz="O'qituvchi bilan 8 dars">8 уроков с преподавателем</li>
+                    <li data-ru="8 самостоятельных занятий" data-uz="8 mustaqil mashg'ulot">8 самостоятельных занятий</li>
                 </ul>
                 <br><a href="https://t.me/sonata_tashkent" class="btn-outline"
-                       style="width:100%;justify-content:center;" target="_blank">Выбрать</a>
+                       style="width:100%;justify-content:center;" target="_blank" data-ru="Выбрать" data-uz="Tanlash">Выбрать</a>
             </div>
             <div class="price-card featured fade-up" style="transition-delay:0.2s">
-                <div class="price-badge">Лучший выбор</div>
-                <div class="price-tag">Рекомендуем</div>
+                <div class="price-badge" data-ru="Лучший выбор" data-uz="Eng yaxshi tanlov">Лучший выбор</div>
+                <div class="price-tag" data-ru="Рекомендуем" data-uz="Tavsiya etamiz">Рекомендуем</div>
                 <div class="price-name">Соната</div>
-                <div class="price-amount">2 550 000 <span>сум</span></div>
-                <div class="price-freq">3 раза в неделю</div>
+                <div class="price-amount">2 550 000 <span data-ru="сум" data-uz="so'm">сум</span></div>
+                <div class="price-freq" data-ru="3 раза в неделю" data-uz="Haftada 3 marta">3 раза в неделю</div>
                 <div class="price-divider"></div>
                 <ul class="price-detail">
-                    <li>12 уроков с преподавателем</li>
-                    <li>12 самостоятельных занятий</li>
+                    <li data-ru="12 уроков с преподавателем" data-uz="O'qituvchi bilan 12 dars">12 уроков с преподавателем</li>
+                    <li data-ru="12 самостоятельных занятий" data-uz="12 mustaqil mashg'ulot">12 самостоятельных занятий</li>
                 </ul>
                 <br><a href="https://t.me/sonata_tashkent" class="btn-primary"
-                       style="width:100%;justify-content:center;background:white;color:var(--accent);" target="_blank">Выбрать</a>
+                       style="width:100%;justify-content:center;background:white;color:var(--accent);" target="_blank" data-ru="Выбрать" data-uz="Tanlash">Выбрать</a>
             </div>
             <div class="price-card fade-up" style="transition-delay:0.3s">
-                <div class="price-tag">Максимум</div>
+                <div class="price-tag" data-ru="Максимум" data-uz="Maksimal">Максимум</div>
                 <div class="price-name">Симфония</div>
-                <div class="price-amount">5 500 000 <span>сум</span></div>
-                <div class="price-freq">каждый день</div>
+                <div class="price-amount">5 500 000 <span data-ru="сум" data-uz="so'm">сум</span></div>
+                <div class="price-freq" data-ru="каждый день" data-uz="Har kuni">каждый день</div>
                 <div class="price-divider"></div>
                 <ul class="price-detail">
-                    <li>30 уроков с преподавателем</li>
-                    <li>30 самостоятельных занятий</li>
+                    <li data-ru="30 уроков с преподавателем" data-uz="O'qituvchi bilan 30 dars">30 уроков с преподавателем</li>
+                    <li data-ru="30 самостоятельных занятий" data-uz="30 mustaqil mashg'ulot">30 самостоятельных занятий</li>
                 </ul>
                 <br><a href="https://t.me/sonata_tashkent" class="btn-outline"
-                       style="width:100%;justify-content:center;" target="_blank">Выбрать</a>
+                       style="width:100%;justify-content:center;" target="_blank" data-ru="Выбрать" data-uz="Tanlash">Выбрать</a>
             </div>
         </div>
-        <p class="pricing-note fade-up"><strong>«Самостоятельные занятия»</strong> — 60 минут самостоятельной практики в
-            школе по записи </p>
+        <p class="pricing-note fade-up" data-ru="<strong>«Самостоятельные занятия»</strong> — 60 минут самостоятельной практики в школе по записи" data-uz="<strong>«Mustaqil mashg'ulotlar»</strong> — maktabda yozuv bo'yicha 60 daqiqa mustaqil amaliyot"><strong>«Самостоятельные занятия»</strong> — 60 минут самостоятельной практики в школе по записи </p>
         <div class="pricing-cta fade-up">
-            <a href="https://t.me/sonata_tashkent" class="btn-primary" target="_blank">
+            <a href="https://t.me/sonata_tashkent" class="btn-primary" target="_blank" data-ru="Записаться на пробный урок" data-uz="Sinov darsiga yozilish">
                 <svg class="tg-icon" viewBox="0 0 24 24">
                     <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                 </svg>
@@ -652,18 +651,14 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
     </div>
 </section>
 
-<!-- =======================================================
-     TEACHERS — переработанная секция
-     Видео по центру в рамке, кнопки прокрутки по бокам
-======================================================= -->
+<!-- TEACHERS -->
 <section id="teachers">
     <div class="container">
         <div class="teachers-header fade-up">
-            <div class="section-label">Команда</div>
-            <h2 class="section-title">Наши преподаватели</h2>
+            <div class="section-label" data-ru="Команда" data-uz="Jamoa">Команда</div>
+            <h2 class="section-title" data-ru="Наши преподаватели" data-uz="Bizning o'qituvchilar">Наши преподаватели</h2>
         </div>
         <div class="teacher-carousel-outer fade-up">
-            <!-- Кнопка влево -->
             <button class="teacher-side-btn prev" id="teacherPrev">&#8592;</button>
 
             <div class="teacher-carousel-track-wrap">
@@ -679,30 +674,19 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                                 </div>
                                 <div class="teacher-vid-controls">
                                     <button class="vc-play">
-                                        <svg class="ic-play" viewBox="0 0 24 24">
-                                            <path d="M8 5v14l11-7z"/>
-                                        </svg>
-                                        <svg class="ic-pause" viewBox="0 0 24 24" style="display:none">
-                                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
-                                        </svg>
+                                        <svg class="ic-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        <svg class="ic-pause" viewBox="0 0 24 24" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                                     </button>
                                     <button class="vc-mute">
-                                        <svg class="ic-muted" viewBox="0 0 24 24">
-                                            <path d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
-                                        </svg>
-                                        <svg class="ic-unmuted" viewBox="0 0 24 24" style="display:none">
-                                            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
-                                        </svg>
+                                        <svg class="ic-muted" viewBox="0 0 24 24"><path d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                        <svg class="ic-unmuted" viewBox="0 0 24 24" style="display:none"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
                                     </button>
                                 </div>
                             </div>
                         </div>
                         <div class="teacher-info-side">
                             <div class="teacher-slide-name">Виктория Ашотовна</div>
-                            <p class="teacher-slide-desc">педагог эстрадного и джазового вокала с опытом работы 12 лет.
-                                Выстраивает программу обучения с учётом целей и запросов ученика. Помогает раскрыть
-                                голос и развить слух, показывая, что музыкальные способности есть у каждого. Включает в
-                                обучение необходимую теорию, чтобы ученик понимал, как правильно управлять голосом.</p>
+                            <p class="teacher-slide-desc" data-ru="педагог эстрадного и джазового вокала с опытом работы 12 лет. Выстраивает программу обучения с учётом целей и запросов ученика. Помогает раскрыть голос и развить слух, показывая, что музыкальные способности есть у каждого. Включает в обучение необходимую теорию, чтобы ученик понимал, как правильно управлять голосом." data-uz="12 yillik tajribaga ega estrada va jazz vokali o'qituvchisi. O'quvchining maqsad va so'rovlarini hisobga olgan holda o'quv dasturini tuzadi. Ovozni ochishga va eshitishni rivojlantirishga yordam beradi, har bir kishida musiqa qobiliyati borligini ko'rsatadi. O'quvchi ovozni to'g'ri boshqarishni tushunishi uchun zarur nazariyani o'rgatadi.">педагог эстрадного и джазового вокала с опытом работы 12 лет. Выстраивает программу обучения с учётом целей и запросов ученика. Помогает раскрыть голос и развить слух, показывая, что музыкальные способности есть у каждого. Включает в обучение необходимую теорию, чтобы ученик понимал, как правильно управлять голосом.</p>
                             <div class="teacher-slide-counter"><span>01</span> / 08</div>
                         </div>
                     </div>
@@ -712,36 +696,22 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                         <div class="teacher-slide-top">
                             <div class="teacher-video-frame" data-tv-playing="false">
                                 <video src="/static/media/teacher2.mp4" poster="/static/media/oblojka9.png" muted loop playsinline></video>
-                                <div class="teacher-video-overlay">
-                                    <div class="big-play-btn"></div>
-                                </div>
+                                <div class="teacher-video-overlay"><div class="big-play-btn"></div></div>
                                 <div class="teacher-vid-controls">
                                     <button class="vc-play">
-                                        <svg class="ic-play" viewBox="0 0 24 24">
-                                            <path d="M8 5v14l11-7z"/>
-                                        </svg>
-                                        <svg class="ic-pause" viewBox="0 0 24 24" style="display:none">
-                                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
-                                        </svg>
+                                        <svg class="ic-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        <svg class="ic-pause" viewBox="0 0 24 24" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                                     </button>
                                     <button class="vc-mute">
-                                        <svg class="ic-muted" viewBox="0 0 24 24">
-                                            <path d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
-                                        </svg>
-                                        <svg class="ic-unmuted" viewBox="0 0 24 24" style="display:none">
-                                            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
-                                        </svg>
+                                        <svg class="ic-muted" viewBox="0 0 24 24"><path d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                        <svg class="ic-unmuted" viewBox="0 0 24 24" style="display:none"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
                                     </button>
                                 </div>
                             </div>
                         </div>
                         <div class="teacher-info-side">
                             <div class="teacher-slide-name">Денис Азадович Гузачев</div>
-                            <p class="teacher-slide-desc">педагог по гитаре с 10- летним опытом работы. В обучении
-                                делает упор на практику, а теорию по нотной грамоте дает в зависимости от целей ученика.
-                                Во время занятий подыгрывает и исполняет материал вместе с учениками, чтобы он был
-                                максимально понятен на практике. Обучает аккомпанированию и помогает освоить навык
-                                одновременной игры и пения</p>
+                            <p class="teacher-slide-desc" data-ru="педагог по гитаре с 10-летним опытом работы. В обучении делает упор на практику, а теорию по нотной грамоте дает в зависимости от целей ученика. Во время занятий подыгрывает и исполняет материал вместе с учениками, чтобы он был максимально понятен на практике. Обучает аккомпанированию и помогает освоить навык одновременной игры и пения" data-uz="10 yillik tajribaga ega gitara o'qituvchisi. O'qitishda amaliyotga urg'u beradi, nota savodxonligi nazariyasini esa o'quvchi maqsadlariga qarab o'rgatadi. Dars davomida o'quvchilar bilan birga chaladi va material amaliyotda yanada tushunarli bo'lishi uchun ijro etadi. Akkompanimentni o'rgatadi va bir vaqtda chalish va kuylash ko'nikmasini egallashga yordam beradi.">педагог по гитаре с 10- летним опытом работы. В обучении делает упор на практику, а теорию по нотной грамоте дает в зависимости от целей ученика. Во время занятий подыгрывает и исполняет материал вместе с учениками, чтобы он был максимально понятен на практике. Обучает аккомпанированию и помогает освоить навык одновременной игры и пения</p>
                             <div class="teacher-slide-counter"><span>02</span> / 08</div>
                         </div>
                     </div>
@@ -751,35 +721,22 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                         <div class="teacher-slide-top">
                             <div class="teacher-video-frame" data-tv-playing="false">
                                 <video src="/static/media/teacher3.mp4" poster="/static/media/oblojka4.png" muted loop playsinline></video>
-                                <div class="teacher-video-overlay">
-                                    <div class="big-play-btn"></div>
-                                </div>
+                                <div class="teacher-video-overlay"><div class="big-play-btn"></div></div>
                                 <div class="teacher-vid-controls">
                                     <button class="vc-play">
-                                        <svg class="ic-play" viewBox="0 0 24 24">
-                                            <path d="M8 5v14l11-7z"/>
-                                        </svg>
-                                        <svg class="ic-pause" viewBox="0 0 24 24" style="display:none">
-                                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
-                                        </svg>
+                                        <svg class="ic-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        <svg class="ic-pause" viewBox="0 0 24 24" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                                     </button>
                                     <button class="vc-mute">
-                                        <svg class="ic-muted" viewBox="0 0 24 24">
-                                            <path d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
-                                        </svg>
-                                        <svg class="ic-unmuted" viewBox="0 0 24 24" style="display:none">
-                                            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
-                                        </svg>
+                                        <svg class="ic-muted" viewBox="0 0 24 24"><path d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                        <svg class="ic-unmuted" viewBox="0 0 24 24" style="display:none"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
                                     </button>
                                 </div>
                             </div>
                         </div>
                         <div class="teacher-info-side">
                             <div class="teacher-slide-name">Мухаммадсолих Раънохон Бахтиер кизи</div>
-                            <p class="teacher-slide-desc">педагог по фортепиано с 7 летним опытом работы. Подстраивает
-                                обучение под любой возраст, легко находит общий язык как с детьми, так и со взрослыми.
-                                Обучает исполнению классических произведений, и современных композиций. Даёт базовые
-                                теоретические знания, делая основной акцент на практике.</p>
+                            <p class="teacher-slide-desc" data-ru="педагог по фортепиано с 7 летним опытом работы. Подстраивает обучение под любой возраст, легко находит общий язык как с детьми, так и со взрослыми. Обучает исполнению классических произведений, и современных композиций. Даёт базовые теоретические знания, делая основной акцент на практике." data-uz="7 yillik tajribaga ega fortepiano o'qituvchisi. O'qitishni har qanday yoshga moslashtiradi, bolalar va kattalar bilan ham oson til topadi. Klassik asarlar va zamonaviy kompozitsiyalarni ijro etishni o'rgatadi. Asosiy e'tiborni amaliyotga qaratgan holda asosiy nazariy bilimlarni beradi.">педагог по фортепиано с 7 летним опытом работы. Подстраивает обучение под любой возраст, легко находит общий язык как с детьми, так и со взрослыми. Обучает исполнению классических произведений, и современных композиций. Даёт базовые теоретические знания, делая основной акцент на практике.</p>
                             <div class="teacher-slide-counter"><span>03</span> / 08</div>
                         </div>
                     </div>
@@ -789,37 +746,22 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                         <div class="teacher-slide-top">
                             <div class="teacher-video-frame" data-tv-playing="false">
                                 <video src="/static/media/teacher4.mp4" poster="/static/media/oblojka5.png" muted loop playsinline></video>
-                                <div class="teacher-video-overlay">
-                                    <div class="big-play-btn"></div>
-                                </div>
+                                <div class="teacher-video-overlay"><div class="big-play-btn"></div></div>
                                 <div class="teacher-vid-controls">
                                     <button class="vc-play">
-                                        <svg class="ic-play" viewBox="0 0 24 24">
-                                            <path d="M8 5v14l11-7z"/>
-                                        </svg>
-                                        <svg class="ic-pause" viewBox="0 0 24 24" style="display:none">
-                                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
-                                        </svg>
+                                        <svg class="ic-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        <svg class="ic-pause" viewBox="0 0 24 24" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                                     </button>
                                     <button class="vc-mute">
-                                        <svg class="ic-muted" viewBox="0 0 24 24">
-                                            <path d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
-                                        </svg>
-                                        <svg class="ic-unmuted" viewBox="0 0 24 24" style="display:none">
-                                            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
-                                        </svg>
+                                        <svg class="ic-muted" viewBox="0 0 24 24"><path d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                        <svg class="ic-unmuted" viewBox="0 0 24 24" style="display:none"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
                                     </button>
                                 </div>
                             </div>
                         </div>
                         <div class="teacher-info-side">
                             <div class="teacher-slide-name">Алёшин Сергей Игоревич</div>
-                            <p class="teacher-slide-desc">преподаватель по ударным инструментам с опытом работы более 40
-                                лет. Благодаря обширному опыту легко адаптирует обучение под любые цели ученика и
-                                работает с разными жанрами — от поп-музыки до джаза. В обучении делает акцент на
-                                правильной постановке рук и упражнениях, которые можно выполнять даже без установки и в
-                                домашних условиях. Также познакомит вас с классической музыкой и поможет научиться
-                                разбираться в ней!</p>
+                            <p class="teacher-slide-desc" data-ru="преподаватель по ударным инструментам с опытом работы более 40 лет. Благодаря обширному опыту легко адаптирует обучение под любые цели ученика и работает с разными жанрами — от поп-музыки до джаза. В обучении делает акцент на правильной постановке рук и упражнениях, которые можно выполнять даже без установки и в домашних условиях. Также познакомит вас с классической музыкой и поможет научиться разбираться в ней!" data-uz="40 yildan ortiq tajribaga ega zarbli asboblar o'qituvchisi. Keng tajribasi tufayli o'qitishni o'quvchining istalgan maqsadiga osongina moslaydi va pop-musiqadan jazgacha turli janrlar bilan ishlaydi. O'qitishda qo'llarning to'g'ri qo'yilishiga va uy sharoitida ham, o'rnatmasiz ham bajarish mumkin bo'lgan mashqlarga urg'u beradi. Siz bilan klassik musiqa bilan ham tanishtiradi va uni tushunishga yordam beradi!">преподаватель по ударным инструментам с опытом работы более 40 лет. Благодаря обширному опыту легко адаптирует обучение под любые цели ученика и работает с разными жанрами — от поп-музыки до джаза. В обучении делает акцент на правильной постановке рук и упражнениях, которые можно выполнять даже без установки и в домашних условиях. Также познакомит вас с классической музыкой и поможет научиться разбираться в ней!</p>
                             <div class="teacher-slide-counter"><span>04</span> / 08</div>
                         </div>
                     </div>
@@ -829,34 +771,22 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                         <div class="teacher-slide-top">
                             <div class="teacher-video-frame" data-tv-playing="false">
                                 <video src="/static/media/teacher5.mp4" poster="/static/media/oblojka7.png" muted loop playsinline></video>
-                                <div class="teacher-video-overlay">
-                                    <div class="big-play-btn"></div>
-                                </div>
+                                <div class="teacher-video-overlay"><div class="big-play-btn"></div></div>
                                 <div class="teacher-vid-controls">
                                     <button class="vc-play">
-                                        <svg class="ic-play" viewBox="0 0 24 24">
-                                            <path d="M8 5v14l11-7z"/>
-                                        </svg>
-                                        <svg class="ic-pause" viewBox="0 0 24 24" style="display:none">
-                                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
-                                        </svg>
+                                        <svg class="ic-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        <svg class="ic-pause" viewBox="0 0 24 24" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                                     </button>
                                     <button class="vc-mute">
-                                        <svg class="ic-muted" viewBox="0 0 24 24">
-                                            <path d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
-                                        </svg>
-                                        <svg class="ic-unmuted" viewBox="0 0 24 24" style="display:none">
-                                            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
-                                        </svg>
+                                        <svg class="ic-muted" viewBox="0 0 24 24"><path d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                        <svg class="ic-unmuted" viewBox="0 0 24 24" style="display:none"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
                                     </button>
                                 </div>
                             </div>
                         </div>
                         <div class="teacher-info-side">
                             <div class="teacher-slide-name">Мамарахимов Авазбек</div>
-                            <p class="teacher-slide-desc">преподаватель по скрипке с 15-летним опытом. Учитывает
-                                индивидуальные особенности ученика, его интересы, цели и уровень подготовки. Помогает
-                                постепенно осваивать инструмент, развивать технику, слух и уверенность в исполнении.</p>
+                            <p class="teacher-slide-desc" data-ru="преподаватель по скрипке с 15-летним опытом. Учитывает индивидуальные особенности ученика, его интересы, цели и уровень подготовки. Помогает постепенно осваивать инструмент, развивать технику, слух и уверенность в исполнении." data-uz="15 yillik tajribaga ega skripka o'qituvchisi. O'quvchining individual xususiyatlarini, qiziqishlari, maqsadlari va tayyorgarlik darajasini hisobga oladi. Asbobni bosqichma-bosqich o'zlashtirishga, texnika, eshitish va ijrodagi ishonchni rivojlantirishga yordam beradi.">преподаватель по скрипке с 15-летним опытом. Учитывает индивидуальные особенности ученика, его интересы, цели и уровень подготовки. Помогает постепенно осваивать инструмент, развивать технику, слух и уверенность в исполнении.</p>
                             <div class="teacher-slide-counter"><span>05</span> / 08</div>
                         </div>
                     </div>
@@ -866,35 +796,22 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                         <div class="teacher-slide-top">
                             <div class="teacher-video-frame" data-tv-playing="false">
                                 <video src="/static/media/teacher6.mp4" poster="/static/media/oblojka2.png" muted loop playsinline></video>
-                                <div class="teacher-video-overlay">
-                                    <div class="big-play-btn"></div>
-                                </div>
+                                <div class="teacher-video-overlay"><div class="big-play-btn"></div></div>
                                 <div class="teacher-vid-controls">
                                     <button class="vc-play">
-                                        <svg class="ic-play" viewBox="0 0 24 24">
-                                            <path d="M8 5v14l11-7z"/>
-                                        </svg>
-                                        <svg class="ic-pause" viewBox="0 0 24 24" style="display:none">
-                                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
-                                        </svg>
+                                        <svg class="ic-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        <svg class="ic-pause" viewBox="0 0 24 24" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                                     </button>
                                     <button class="vc-mute">
-                                        <svg class="ic-muted" viewBox="0 0 24 24">
-                                            <path d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
-                                        </svg>
-                                        <svg class="ic-unmuted" viewBox="0 0 24 24" style="display:none">
-                                            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
-                                        </svg>
+                                        <svg class="ic-muted" viewBox="0 0 24 24"><path d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                        <svg class="ic-unmuted" viewBox="0 0 24 24" style="display:none"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
                                     </button>
                                 </div>
                             </div>
                         </div>
                         <div class="teacher-info-side">
                             <div class="teacher-slide-name">Алан Ли</div>
-                            <p class="teacher-slide-desc">преподаватель по гитаре с опытом работы 5 лет. Делает упор на
-                                теоретическую базу: изучение нотной грамоты и технику игры.Такой подход позволяет
-                                ученикам не только уверенно освоить гитару, но и при необходимости перейти и на другие
-                                инструменты.</p>
+                            <p class="teacher-slide-desc" data-ru="преподаватель по гитаре с опытом работы 5 лет. Делает упор на теоретическую базу: изучение нотной грамоты и технику игры. Такой подход позволяет ученикам не только уверенно освоить гитару, но и при необходимости перейти и на другие инструменты." data-uz="5 yillik tajribaga ega gitara o'qituvchisi. Nazariy asosga urg'u beradi: nota savodxonligi va chalish texnikasini o'rganish. Bunday yondashuv o'quvchilarga nafaqat gitarani ishonch bilan o'zlashtirishga, balki zarur bo'lsa boshqa asboblarga ham o'tishga imkon beradi.">преподаватель по гитаре с опытом работы 5 лет. Делает упор на теоретическую базу: изучение нотной грамоты и технику игры.Такой подход позволяет ученикам не только уверенно освоить гитару, но и при необходимости перейти и на другие инструменты.</p>
                             <div class="teacher-slide-counter"><span>06</span> / 08</div>
                         </div>
                     </div>
@@ -904,35 +821,22 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                         <div class="teacher-slide-top">
                             <div class="teacher-video-frame" data-tv-playing="false">
                                 <video src="/static/media/teacher7.mp4" poster="/static/media/oblojka3.png" muted loop playsinline></video>
-                                <div class="teacher-video-overlay">
-                                    <div class="big-play-btn"></div>
-                                </div>
+                                <div class="teacher-video-overlay"><div class="big-play-btn"></div></div>
                                 <div class="teacher-vid-controls">
                                     <button class="vc-play">
-                                        <svg class="ic-play" viewBox="0 0 24 24">
-                                            <path d="M8 5v14l11-7z"/>
-                                        </svg>
-                                        <svg class="ic-pause" viewBox="0 0 24 24" style="display:none">
-                                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
-                                        </svg>
+                                        <svg class="ic-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        <svg class="ic-pause" viewBox="0 0 24 24" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                                     </button>
                                     <button class="vc-mute">
-                                        <svg class="ic-muted" viewBox="0 0 24 24">
-                                            <path d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
-                                        </svg>
-                                        <svg class="ic-unmuted" viewBox="0 0 24 24" style="display:none">
-                                            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
-                                        </svg>
+                                        <svg class="ic-muted" viewBox="0 0 24 24"><path d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                        <svg class="ic-unmuted" viewBox="0 0 24 24" style="display:none"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
                                     </button>
                                 </div>
                             </div>
                         </div>
                         <div class="teacher-info-side">
                             <div class="teacher-slide-name">Мельников Кирилл</div>
-                            <p class="teacher-slide-desc">педагог по барабанам с опытом работы 4 года.Выстраивает
-                                обучение исходя из целей ученика. Помогает развить координацию и навык одновременной
-                                работы двух рук. На занятиях уделяет внимание игре под метроном для улучшения чувства
-                                ритма и ощущения боя.</p>
+                            <p class="teacher-slide-desc" data-ru="педагог по барабанам с опытом работы 4 года. Выстраивает обучение исходя из целей ученика. Помогает развить координацию и навык одновременной работы двух рук. На занятиях уделяет внимание игре под метроном для улучшения чувства ритма и ощущения боя." data-uz="4 yillik tajribaga ega nog'ora o'qituvchisi. O'quvchi maqsadlaridan kelib chiqib o'qitishni tuzadi. Koordinatsiyani va ikkala qo'lning bir vaqtda ishlash ko'nikmasini rivojlantirishga yordam beradi. Darslarda ritm tuyg'usi va urish sezgisini yaxshilash uchun metronom ostida chalishga e'tibor beradi.">педагог по барабанам с опытом работы 4 года.Выстраивает обучение исходя из целей ученика. Помогает развить координацию и навык одновременной работы двух рук. На занятиях уделяет внимание игре под метроном для улучшения чувства ритма и ощущения боя.</p>
                             <div class="teacher-slide-counter"><span>07</span> / 08</div>
                         </div>
                     </div>
@@ -942,36 +846,22 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                         <div class="teacher-slide-top">
                             <div class="teacher-video-frame" data-tv-playing="false">
                                 <video src="/static/media/teacher8.mp4" poster="/static/media/oblojka1.png" muted loop playsinline></video>
-                                <div class="teacher-video-overlay">
-                                    <div class="big-play-btn"></div>
-                                </div>
+                                <div class="teacher-video-overlay"><div class="big-play-btn"></div></div>
                                 <div class="teacher-vid-controls">
                                     <button class="vc-play">
-                                        <svg class="ic-play" viewBox="0 0 24 24">
-                                            <path d="M8 5v14l11-7z"/>
-                                        </svg>
-                                        <svg class="ic-pause" viewBox="0 0 24 24" style="display:none">
-                                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
-                                        </svg>
+                                        <svg class="ic-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        <svg class="ic-pause" viewBox="0 0 24 24" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                                     </button>
                                     <button class="vc-mute">
-                                        <svg class="ic-muted" viewBox="0 0 24 24">
-                                            <path d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
-                                        </svg>
-                                        <svg class="ic-unmuted" viewBox="0 0 24 24" style="display:none">
-                                            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
-                                        </svg>
+                                        <svg class="ic-muted" viewBox="0 0 24 24"><path d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                        <svg class="ic-unmuted" viewBox="0 0 24 24" style="display:none"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
                                     </button>
                                 </div>
                             </div>
                         </div>
                         <div class="teacher-info-side">
                             <div class="teacher-slide-name">Фарёзбек Рафук угли</div>
-                            <p class="teacher-slide-desc">преподаватель по вокалу с опытом работы 3 лет. На занятиях в
-                                первую очередь работает над постановкой голоса: выполняет с учениками вокальные
-                                упражнения, после чего переходит к разбору и исполнению песен. Уроки подходят как для
-                                начинающих, так и для тех, кто хочет развивать технику, уверенно исполнять любимые
-                                композиции или готовиться к поступлению в музыкальные учебные заведения.</p>
+                            <p class="teacher-slide-desc" data-ru="преподаватель по вокалу с опытом работы 3 лет. На занятиях в первую очередь работает над постановкой голоса: выполняет с учениками вокальные упражнения, после чего переходит к разбору и исполнению песен. Уроки подходят как для начинающих, так и для тех, кто хочет развивать технику, уверенно исполнять любимые композиции или готовиться к поступлению в музыкальные учебные заведения." data-uz="3 yillik tajribaga ega vokal o'qituvchisi. Darslarda avvalambor ovoz qo'yish ustida ishlaydi: o'quvchilar bilan vokal mashqlari bajaradi, so'ngra qo'shiqlarni tahlil qilish va ijro etishga o'tadi. Darslar ham boshlang'ichlar, ham texnikani rivojlantirmoqchi, sevimli kompozitsiyalarni ishonch bilan ijro etmoqchi yoki musiqa ta'lim muassasalariga kirish uchun tayyorlanmoqchi bo'lganlar uchun mos keladi.">преподаватель по вокалу с опытом работы 3 лет. На занятиях в первую очередь работает над постановкой голоса: выполняет с учениками вокальные упражнения, после чего переходит к разбору и исполнению песен. Уроки подходят как для начинающих, так и для тех, кто хочет развивать технику, уверенно исполнять любимые композиции или готовиться к поступлению в музыкальные учебные заведения.</p>
                             <div class="teacher-slide-counter"><span>08</span> / 08</div>
                         </div>
                     </div>
@@ -979,16 +869,14 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                 </div>
             </div>
 
-            <!-- Кнопка вправо -->
             <button class="teacher-side-btn next" id="teacherNext">&#8594;</button>
 
-            <!-- Точки навигации под слайдером -->
             <div class="teacher-carousel-nav">
                 <div class="teacher-carousel-dots" id="teacherDots"></div>
             </div>
         </div>
         <div style="text-align:center; margin-top:40px;" class="fade-up">
-            <a href="https://t.me/sonata_tashkent" class="btn-primary" target="_blank">
+            <a href="https://t.me/sonata_tashkent" class="btn-primary" target="_blank" data-ru="Записаться на пробный урок" data-uz="Sinov darsiga yozilish">
                 <svg class="tg-icon" viewBox="0 0 24 24">
                     <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                 </svg>
@@ -1002,13 +890,12 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
 <section id="reviews">
     <div class="container">
         <div style="text-align:center; margin-bottom:16px;" class="fade-up">
-            <div class="section-label">Отзывы</div>
-            <h2 class="section-title">Отзывы реальных<br>учеников и родителей</h2>
+            <div class="section-label" data-ru="Отзывы" data-uz="Sharhlar">Отзывы</div>
+            <h2 class="section-title" data-ru="Отзывы реальных<br>учеников и родителей" data-uz="Haqiqiy o'quvchilar<br>va ota-onalar sharhlari">Отзывы реальных<br>учеников и родителей</h2>
         </div>
         <div class="reviews-main">
             <div class="reviews-content">
 
-                <!-- Сетка: 3 колонки — 2 текстовых слева, 1 колонка видео справа -->
                 <div class="reviews-grid-mixed">
 
                     <!-- Текстовый отзыв 1 -->
@@ -1017,9 +904,7 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                         <div class="review-card review-card-clickable fade-up">
                             <div class="review-quote">"</div>
                             <div class="review-stars">★★★★★</div>
-                            <p class="review-text">Очень нравится! Позвонил, пришёл на пробный урок, и вот, уже
-                                занимаюсь. Здесь вам предложат индивидуальный подход, занятия 1 на 1. В абонемент входят
-                                часы для самоподготовки, что очень удобно для отработки навыков.</p>
+                            <p class="review-text">Очень нравится! Позвонил, пришёл на пробный урок, и вот, уже занимаюсь. Здесь вам предложат индивидуальный подход, занятия 1 на 1. В абонемент входят часы для самоподготовки, что очень удобно для отработки навыков.</p>
                             <div class="review-author">
                                 <div class="review-avatar">Ю</div>
                                 <div>
@@ -1028,10 +913,8 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                                 </div>
                             </div>
                             <div class="review-yn-badge">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M10 6v2H5v11h11v-5h2v7H3V6h7zm11-3v8l-3.5-3.5-5.5 5.5-2-2 5.5-5.5L12 3h9z"/>
-                                </svg>
-                                Читать на Яндекс Картах
+                                <svg viewBox="0 0 24 24"><path d="M10 6v2H5v11h11v-5h2v7H3V6h7zm11-3v8l-3.5-3.5-5.5 5.5-2-2 5.5-5.5L12 3h9z"/></svg>
+                                <span data-ru="Читать на Яндекс Картах" data-uz="Yandex Xaritalarda o'qish">Читать на Яндекс Картах</span>
                             </div>
                         </div>
                     </a>
@@ -1042,9 +925,7 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                         <div class="review-card review-card-clickable fade-up" style="transition-delay:0.1s;">
                             <div class="review-quote">"</div>
                             <div class="review-stars">★★★★★</div>
-                            <p class="review-text">Место в котором отдыхаешь сердцем и душой. Я выбрала эту школу потому
-                                что тут лучшие учителя. Всегда приветливый персонал. Есть куча бонусов и приемлемые цены
-                            </p>
+                            <p class="review-text">Место в котором отдыхаешь сердцем и душой. Я выбрала эту школу потому что тут лучшие учителя. Всегда приветливый персонал. Есть куча бонусов и приемлемые цены</p>
                             <div class="review-author">
                                 <div class="review-avatar">В</div>
                                 <div>
@@ -1053,47 +934,35 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                                 </div>
                             </div>
                             <div class="review-yn-badge">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M10 6v2H5v11h11v-5h2v7H3V6h7zm11-3v8l-3.5-3.5-5.5 5.5-2-2 5.5-5.5L12 3h9z"/>
-                                </svg>
-                                Читать на Яндекс Картах
+                                <svg viewBox="0 0 24 24"><path d="M10 6v2H5v11h11v-5h2v7H3V6h7zm11-3v8l-3.5-3.5-5.5 5.5-2-2 5.5-5.5L12 3h9z"/></svg>
+                                <span data-ru="Читать на Яндекс Картах" data-uz="Yandex Xaritalarda o'qish">Читать на Яндекс Картах</span>
                             </div>
                         </div>
                     </a>
 
-                    <!-- Правая колонка: 3 видео-кружка вертикально -->
+                    <!-- Правая колонка: видео-кружки -->
                     <div class="reviews-video-col fade-up" style="transition-delay:0.15s;">
                         <div class="review-video-circle" id="rvCircle1">
                             <video src="/static/media/rate2.mp4" muted loop playsinline></video>
-                            <div class="rv-overlay">
-                                <div class="rv-play"></div>
-                            </div>
+                            <div class="rv-overlay"><div class="rv-play"></div></div>
                         </div>
                         <div class="review-video-circle" id="rvCircle3">
                             <video src="/static/media/rate1.mp4" muted loop playsinline></video>
-                            <div class="rv-overlay">
-                                <div class="rv-play"></div>
-                            </div>
+                            <div class="rv-overlay"><div class="rv-play"></div></div>
                         </div>
                         <div class="review-video-circle" id="rvCircle2">
                             <video src="/static/media/rate3.mp4" muted loop playsinline></video>
-                            <div class="rv-overlay">
-                                <div class="rv-play"></div>
-                            </div>
+                            <div class="rv-overlay"><div class="rv-play"></div></div>
                         </div>
                     </div>
 
-                    <!-- Широкий отзыв (занимает 2 левых колонки) -->
+                    <!-- Широкий отзыв -->
                     <a href="https://yandex.uz/maps/org/128868899077/reviews?reviews%5BpublicId%5D=qf2d2w8uduqm8cmjf6uauzevzg&si=uu49afb0w2jpe5x4kxk1z1zhdr&utm_source=review"
                        target="_blank" class="review-link-wrap review-card-wide">
                         <div class="review-card review-card-clickable fade-up" style="transition-delay:0.2s;">
                             <div class="review-quote">"</div>
                             <div class="review-stars">★★★★★</div>
-                            <p class="review-text">Занимаюсь в школе Sonata уже 4й месяц у Виктории. Очень рада, что
-                                попала к ней — ради преподавателя еду и занимаюсь с удовольствием, видя прогресс!
-                                Занятия вокалом помогают прийти в себя после депрессии и открыть для себя новые грани.
-                                Хорошая идея, что есть пробное занятие — это помогает понять подходит ли
-                                преподаватель.</p>
+                            <p class="review-text">Занимаюсь в школе Sonata уже 4й месяц у Виктории. Очень рада, что попала к ней — ради преподавателя еду и занимаюсь с удовольствием, видя прогресс! Занятия вокалом помогают прийти в себя после депрессии и открыть для себя новые грани. Хорошая идея, что есть пробное занятие — это помогает понять подходит ли преподаватель.</p>
                             <div class="review-author">
                                 <div class="review-avatar">A</div>
                                 <div>
@@ -1102,23 +971,19 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                                 </div>
                             </div>
                             <div class="review-yn-badge">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M10 6v2H5v11h11v-5h2v7H3V6h7zm11-3v8l-3.5-3.5-5.5 5.5-2-2 5.5-5.5L12 3h9z"/>
-                                </svg>
-                                Читать на Яндекс Картах
+                                <svg viewBox="0 0 24 24"><path d="M10 6v2H5v11h11v-5h2v7H3V6h7zm11-3v8l-3.5-3.5-5.5 5.5-2-2 5.5-5.5L12 3h9z"/></svg>
+                                <span data-ru="Читать на Яндекс Картах" data-uz="Yandex Xaritalarda o'qish">Читать на Яндекс Картах</span>
                             </div>
                         </div>
                     </a>
 
-                    <!-- Текстовый отзыв 4 (занимает 2 левых колонки) -->
+                    <!-- Текстовый отзыв 4 -->
                     <a href="https://yandex.uz/maps/org/128868899077/reviews?reviews%5BpublicId%5D=2nhyedkrzf4f37nj68nzy3edgw&si=uu49afb0w2jpe5x4kxk1z1zhdr&utm_source=review"
                        target="_blank" class="review-link-wrap review-card-wide">
                         <div class="review-card review-card-clickable fade-up" style="transition-delay:0.3s;">
                             <div class="review-quote">"</div>
                             <div class="review-stars">★★★★★</div>
-                            <p class="review-text">Классная школа, занимаюсь уже второй месяц с огромным удовольствием!
-                                Отдельное спасибо преподавателю Виктории, каждый раз заряд бодрости и радости после
-                                занятия. И, конечно, прогресс уже заметен.</p>
+                            <p class="review-text">Классная школа, занимаюсь уже второй месяц с огромным удовольствием! Отдельное спасибо преподавателю Виктории, каждый раз заряд бодрости и радости после занятия. И, конечно, прогресс уже заметен.</p>
                             <div class="review-author">
                                 <div class="review-avatar">E</div>
                                 <div>
@@ -1127,10 +992,8 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                                 </div>
                             </div>
                             <div class="review-yn-badge">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M10 6v2H5v11h11v-5h2v7H3V6h7zm11-3v8l-3.5-3.5-5.5 5.5-2-2 5.5-5.5L12 3h9z"/>
-                                </svg>
-                                Читать на Яндекс Картах
+                                <svg viewBox="0 0 24 24"><path d="M10 6v2H5v11h11v-5h2v7H3V6h7zm11-3v8l-3.5-3.5-5.5 5.5-2-2 5.5-5.5L12 3h9z"/></svg>
+                                <span data-ru="Читать на Яндекс Картах" data-uz="Yandex Xaritalarda o'qish">Читать на Яндекс Картах</span>
                             </div>
                         </div>
                     </a>
@@ -1138,7 +1001,7 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                 </div>
 
                 <div class="reviews-cta fade-up">
-                    <a href="https://t.me/sonata_tashkent" class="btn-primary" target="_blank">
+                    <a href="https://t.me/sonata_tashkent" class="btn-primary" target="_blank" data-ru="Записаться на пробный урок" data-uz="Sinov darsiga yozilish">
                         <svg class="tg-icon" viewBox="0 0 24 24">
                             <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                         </svg>
@@ -1151,19 +1014,17 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                 <div class="reviews-side-inner">
                     <div>
                         <div class="reviews-stat-big">100+</div>
-                        <div class="reviews-stat-txt">ребят уже освоили любимые мелодии</div>
+                        <div class="reviews-stat-txt" data-ru="ребят уже освоили любимые мелодии" data-uz="yigit-qizlar sevimli melodiyalarni o'zlashtirishdi">ребят уже освоили любимые мелодии</div>
                     </div>
                     <div>
-                        <div class="reviews-side-label">Рейтинг</div>
+                        <div class="reviews-side-label" data-ru="Рейтинг" data-uz="Reyting">Рейтинг</div>
                         <div class="reviews-stat-big" style="font-size:32px;">5.0 ★</div>
-                        <div class="reviews-stat-txt">на Яндекс Картах</div>
+                        <div class="reviews-stat-txt" data-ru="на Яндекс Картах" data-uz="Yandex Xaritalarda">на Яндекс Картах</div>
                     </div>
                     <a href="https://yandex.uz/maps/org/128868899077/reviews/?ll=69.241594%2C41.280990&tab=reviews&text=sonata&z=16.65"
-                       target="_blank" class="reviews-all-link">
+                       target="_blank" class="reviews-all-link" data-ru="Ещё больше отзывов" data-uz="Ko'proq sharhlar">
                         Ещё больше отзывов
-                        <svg viewBox="0 0 24 24">
-                            <path d="M10 6v2H5v11h11v-5h2v7H3V6h7zm11-3v8l-3.5-3.5-5.5 5.5-2-2 5.5-5.5L12 3h9z"/>
-                        </svg>
+                        <svg viewBox="0 0 24 24"><path d="M10 6v2H5v11h11v-5h2v7H3V6h7zm11-3v8l-3.5-3.5-5.5 5.5-2-2 5.5-5.5L12 3h9z"/></svg>
                     </a>
                 </div>
             </div>
@@ -1176,30 +1037,29 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
     <div class="container">
         <div class="register-inner">
             <div class="register-left fade-up">
-                <div class="section-label">Запись</div>
-                <h2 class="section-title">Запишитесь на бесплатный пробный урок</h2>
-                <p class="register-desc">Оставьте ваше имя и номер телефона. Мы свяжемся с вами, чтобы подобрать удобное
-                    время.</p>
+                <div class="section-label" data-ru="Запись" data-uz="Ro'yxatdan o'tish">Запись</div>
+                <h2 class="section-title" data-ru="Запишитесь на бесплатный пробный урок" data-uz="Bepul sinov darsiga yoziling">Запишитесь на бесплатный пробный урок</h2>
+                <p class="register-desc" data-ru="Оставьте ваше имя и номер телефона. Мы свяжемся с вами, чтобы подобрать удобное время." data-uz="Ismingiz va telefon raqamingizni qoldiring. Qulay vaqt tanlash uchun siz bilan bog'lanamiz.">Оставьте ваше имя и номер телефона. Мы свяжемся с вами, чтобы подобрать удобное время.</p>
             </div>
             <div class="register-card fade-up" style="transition-delay:0.15s;">
-                <div class="register-card-title">Оставить заявку</div>
-                <div class="register-card-sub">Перезвоним и подберём удобное время</div>
+                <div class="register-card-title" data-ru="Оставить заявку" data-uz="Ariza qoldirish">Оставить заявку</div>
+                <div class="register-card-sub" data-ru="Перезвоним и подберём удобное время" data-uz="Qayta qo'ng'iroq qilamiz va qulay vaqt tanlaymiz">Перезвоним и подберём удобное время</div>
                 <form id="registerForm" action="/try-free-lesson" method="post" novalidate>
                     {% csrf_token %}
                     <div class="form-group">
-                        <label for="name">Имя</label>
-                        <input id="name" type="text" name="name" placeholder="Пример: Александр" required>
+                        <label for="name" data-ru="Имя" data-uz="Ism">Имя</label>
+                        <input id="name" type="text" name="name" placeholder="Пример: Александр" required data-placeholder-ru="Пример: Александр" data-placeholder-uz="Misol: Alisher">
                     </div>
                     <div class="form-group">
-                        <label for="phone">Номер телефона</label>
+                        <label for="phone" data-ru="Номер телефона" data-uz="Telefon raqami">Номер телефона</label>
                         <input id="phone" type="text" name="phone_number" placeholder="+998 (__) ___-__-__" required>
                     </div>
                     <div class="form-group">
-                        <label for="comment">Комментарий</label>
+                        <label for="comment" data-ru="Комментарий" data-uz="Izoh">Комментарий</label>
                         <input id="comment" type="text" name="comment">
                     </div>
                     <button type="submit" class="form-submit-btn" id="submitBtn">
-                        <span class="btn-text">Записаться на пробный урок</span>
+                        <span class="btn-text" data-ru="Записаться на пробный урок" data-uz="Sinov darsiga yozilish">Записаться на пробный урок</span>
                         <div class="btn-spinner"></div>
                     </button>
                 </form>
@@ -1212,10 +1072,9 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
 <div class="modal-overlay" id="successModal">
     <div class="modal-box">
         <div class="modal-icon">✓</div>
-        <div class="modal-title">Заявка отправлена!</div>
-        <p class="modal-text">Спасибо за отклик! Менеджер свяжется с вами в ближайшее время и подберёт удобное время для
-            урока.</p>
-        <button class="modal-close" onclick="closeModal()">Отлично, жду звонка!</button>
+        <div class="modal-title" data-ru="Заявка отправлена!" data-uz="Ariza yuborildi!">Заявка отправлена!</div>
+        <p class="modal-text" data-ru="Спасибо за отклик! Менеджер свяжется с вами в ближайшее время и подберёт удобное время для урока." data-uz="Murojaat uchun rahmat! Menejer tez orada siz bilan bog'lanadi va dars uchun qulay vaqt tanlaydi.">Спасибо за отклик! Менеджер свяжется с вами в ближайшее время и подберёт удобное время для урока.</p>
+        <button class="modal-close" onclick="closeModal()" data-ru="Отлично, жду звонка!" data-uz="Zo'r, qo'ng'iroqni kutaman!">Отлично, жду звонка!</button>
     </div>
 </div>
 
@@ -1224,22 +1083,22 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
     <div class="container">
         <div class="address-grid">
             <div>
-                <div class="section-label fade-up">Контакты</div>
-                <h2 class="section-title fade-up">Как нас найти<br>и написать</h2>
+                <div class="section-label fade-up" data-ru="Контакты" data-uz="Kontaktlar">Контакты</div>
+                <h2 class="section-title fade-up" data-ru="Как нас найти<br>и написать" data-uz="Bizni qanday topish<br>va yozish">Как нас найти<br>и написать</h2>
                 <div class="address-details">
                     <div class="address-item fade-up">
                         <div class="address-item-icon">📍</div>
                         <div class="address-item-text">
-                            <strong>Адрес</strong>
+                            <strong data-ru="Адрес" data-uz="Manzil">Адрес</strong>
                             <p>
                                 <a href="https://yandex.uz/maps/org/128868899077/?ll=69.241531%2C41.280990&utm_source=share&z=16"
-                                   target="_blank" class="contact-link">Ташкент, Мукими 46А, цокольный этаж</a></p>
+                                   target="_blank" class="contact-link" data-ru="Ташкент, Мукими 46А, цокольный этаж" data-uz="Toshkent, Muqimiy 46A, yerosti qavat">Ташкент, Мукими 46А, цокольный этаж</a></p>
                         </div>
                     </div>
                     <div class="address-item fade-up" style="transition-delay:0.1s">
                         <div class="address-item-icon">📞</div>
                         <div class="address-item-text">
-                            <strong>Позвонить</strong>
+                            <strong data-ru="Позвонить" data-uz="Qo'ng'iroq qilish">Позвонить</strong>
                             <p><a href="tel:+998200003040" class="contact-link">+998 20 000-30-40</a></p>
                         </div>
                     </div>
@@ -1250,38 +1109,27 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                             </svg>
                         </div>
                         <div class="address-item-text">
-                            <strong>Написать</strong>
-                            <p><a href="https://t.me/sonata_tashkent" target="_blank" class="contact-link">@sonata_tashkent</a>
-                            </p>
+                            <strong data-ru="Написать" data-uz="Yozish">Написать</strong>
+                            <p><a href="https://t.me/sonata_tashkent" target="_blank" class="contact-link">@sonata_tashkent</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="fade-up" style="margin-bottom:24px;">
-                    <p style="font-size:13px;color:var(--gray);margin-bottom:12px;font-family:var(--font-cond);text-transform:uppercase;letter-spacing:0.1em;font-weight:700;">
-                        Соцсети</p>
+                    <p style="font-size:13px;color:var(--gray);margin-bottom:12px;font-family:var(--font-cond);text-transform:uppercase;letter-spacing:0.1em;font-weight:700;" data-ru="Соцсети" data-uz="Ijtimoiy tarmoqlar">Соцсети</p>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/sonata_tashkent/" class="social-link" target="_blank"
-                           title="Instagram">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
+                        <a href="https://www.instagram.com/sonata_tashkent/" class="social-link" target="_blank" title="Instagram">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                         </a>
-                        <a href="https://t.me/sonata_tashkent_music" class="social-link" target="_blank"
-                           title="Telegram">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-                            </svg>
+                        <a href="https://t.me/sonata_tashkent_music" class="social-link" target="_blank" title="Telegram">
+                            <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
                         </a>
-                        <a href="https://www.youtube.com/@sonata_tashkent" class="social-link" target="_blank"
-                           title="YouTube">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
-                            </svg>
+                        <a href="https://www.youtube.com/@sonata_tashkent" class="social-link" target="_blank" title="YouTube">
+                            <svg viewBox="0 0 24 24"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
                         </a>
                     </div>
                 </div>
                 <div class="fade-up">
-                    <a href="https://t.me/sonata_tashkent" class="btn-primary" target="_blank">
+                    <a href="https://t.me/sonata_tashkent" class="btn-primary" target="_blank" data-ru="Записаться на пробный урок" data-uz="Sinov darsiga yozilish">
                         <svg class="tg-icon" viewBox="0 0 24 24">
                             <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                         </svg>
@@ -1293,7 +1141,7 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                 <a href="https://yandex.uz/maps/org/128868899077/?utm_medium=mapframe&utm_source=maps"
                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Sonata</a>
                 <a href="https://yandex.uz/maps/10335/tashkent/category/music_school/184105912/?utm_medium=mapframe&utm_source=maps"
-                   style="color:#eee;font-size:12px;position:absolute;top:14px;">Музыкальное образование в Ташкенте</a>
+                   style="color:#eee;font-size:12px;position:absolute;top:14px;" data-ru="Музыкальное образование в Ташкенте" data-uz="Toshkentda musiqa ta'limi">Музыкальное образование в Ташкенте</a>
                 <iframe src="https://yandex.uz/map-widget/v1/org/128868899077/?ll=69.241531%2C41.280990&utm_source=share&z=16"
                         width="560" height="400" frameborder="1" allowfullscreen="true"
                         style="position:relative;"></iframe>
@@ -1305,9 +1153,8 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
 <footer>
     <div class="container">
         <div class="footer-inner">
-            <p class="footer-copy">© 2026 <strong>Sonata</strong> — Музыкальная школа в Ташкенте</p>
-            <p class="footer-copy">Мукими 46А, цокольный этаж · <a href="tel:+998200003040" style="color:var(--accent)">+998
-                20 000-30-40</a></p>
+            <p class="footer-copy" data-ru="© 2026 <strong>Sonata</strong> — Музыкальная школа в Ташкенте" data-uz="© 2026 <strong>Sonata</strong> — Toshkentdagi musiqa maktabi">© 2026 <strong>Sonata</strong> — Музыкальная школа в Ташкенте</p>
+            <p class="footer-copy" data-ru="Мукими 46А, цокольный этаж · <a href='tel:+998200003040' style='color:var(--accent)'>+998 20 000-30-40</a>" data-uz="Muqimiy 46A, yerosti qavat · <a href='tel:+998200003040' style='color:var(--accent)'>+998 20 000-30-40</a>">Мукими 46А, цокольный этаж · <a href="tel:+998200003040" style="color:var(--accent)">+998 20 000-30-40</a></p>
         </div>
     </div>
 </footer>
@@ -1320,6 +1167,48 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
 <button id="back-top" title="Вверх">↑</button>
 
 <script>
+    // =============================================
+    // LANGUAGE SWITCHER
+    // =============================================
+    var currentLang = localStorage.getItem('sonataLang') || 'ru';
+
+    function setLang(lang) {
+        currentLang = lang;
+        localStorage.setItem('sonataLang', lang);
+
+        // Обновляем кнопки переключателя
+        document.getElementById('btnRu').classList.toggle('active', lang === 'ru');
+        document.getElementById('btnUz').classList.toggle('active', lang === 'uz');
+        document.getElementById('btnRuMobile').classList.toggle('active', lang === 'ru');
+        document.getElementById('btnUzMobile').classList.toggle('active', lang === 'uz');
+
+        // Обновляем все элементы с data-ru / data-uz
+        document.querySelectorAll('[data-ru][data-uz]').forEach(function(el) {
+            var text = lang === 'uz' ? el.getAttribute('data-uz') : el.getAttribute('data-ru');
+            if (text !== null) {
+                // Используем innerHTML для поддержки тегов <br>, <strong> и т.д.
+                el.innerHTML = text;
+            }
+        });
+
+        // Обновляем placeholder для input
+        document.querySelectorAll('[data-placeholder-ru][data-placeholder-uz]').forEach(function(el) {
+            el.placeholder = lang === 'uz' ? el.getAttribute('data-placeholder-uz') : el.getAttribute('data-placeholder-ru');
+        });
+
+        // Обновляем lang атрибут html
+        document.documentElement.lang = lang === 'uz' ? 'uz' : 'ru';
+    }
+
+    // Применяем язык при загрузке страницы
+    document.addEventListener('DOMContentLoaded', function() {
+        setLang(currentLang);
+    });
+
+    // =============================================
+    // ОРИГИНАЛЬНЫЕ СКРИПТЫ (без изменений)
+    // =============================================
+
     // Header scroll
     const header = document.getElementById('header');
     const backTop = document.getElementById('back-top');
@@ -1457,10 +1346,7 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
     document.getElementById('successModal')?.addEventListener('click', function(e) { if (e.target === this) closeModal(); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-    // =======================================================
-    // TEACHER CAROUSEL — переработан под новую структуру
-    // Видео в .teacher-video-frame, кнопки по бокам
-    // =======================================================
+    // TEACHER CAROUSEL
     (function() {
       const track = document.getElementById('teacherTrack');
       if (!track) return;
@@ -1468,7 +1354,6 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
       const dotsWrap = document.getElementById('teacherDots');
       let tIdx = 0;
 
-      // Генерируем точки
       slides.forEach((_, i) => {
         const d = document.createElement('div');
         d.className = 'teacher-dot' + (i === 0 ? ' active' : '');
@@ -1504,7 +1389,6 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
       document.getElementById('teacherPrev').addEventListener('click', () => goTeacher(tIdx - 1));
       document.getElementById('teacherNext').addEventListener('click', () => goTeacher(tIdx + 1));
 
-      // Touch swipe
       const tWrap = document.querySelector('.teacher-carousel-track-wrap');
       let tvTouchStart = 0;
       if (tWrap) {
@@ -1515,7 +1399,6 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
         }, { passive: true });
       }
 
-      // Инициализация: контролы для каждого слайда
       slides.forEach(slide => {
         const frame = slide.querySelector('.teacher-video-frame');
         if (!frame) return;
@@ -1574,15 +1457,12 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
         });
       });
 
-      // Запускаем первый слайд
       const firstFrame = slides[0] && slides[0].querySelector('.teacher-video-frame');
       const firstVid = firstFrame && firstFrame.querySelector('video');
       if (firstVid) { firstVid.muted = true; firstVid.play().catch(()=>{}); }
     })();
 
-    // =======================================================
     // Круглые видео-отзывы
-    // =======================================================
     document.querySelectorAll('.review-video-circle').forEach(circle => {
       const video = circle.querySelector('video');
       const overlay = circle.querySelector('.rv-overlay');

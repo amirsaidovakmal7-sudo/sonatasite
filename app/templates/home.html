@@ -79,6 +79,8 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap"
           rel="stylesheet">
     <link rel="icon" type="image/sonata-logo" href="/static/media/sonatalogo.jpg">
@@ -203,13 +205,13 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
                 <div class="hero-img-wrap" id="heroGallery">
                     <div class="gallery-track" id="galleryTrack">
                         <div class="gallery-slide"><img src="/static/media/studiopic6.jpg" alt="Студия Sonata" onerror="this.style.display='none';"></div>
-                        <div class="gallery-slide"><img src="/static/media/studiopic2.jpg" alt="Студия Sonata" onerror="this.style.display='none';"></div>
-                        <div class="gallery-slide"><img src="/static/media/studiopic4.jpg" alt="Студия Sonata" onerror="this.style.display='none';"></div>
-                        <div class="gallery-slide"><img src="/static/media/studiopic3.jpg" alt="Студия Sonata" onerror="this.style.display='none';"></div>
-                        <div class="gallery-slide"><img src="/static/media/studiopic7.jpg" alt="Студия Sonata" onerror="this.style.display='none';"></div>
-                        <div class="gallery-slide"><img src="/static/media/studiopic1.jpg" alt="Студия Sonata" onerror="this.style.display='none';"></div>
-                        <div class="gallery-slide"><img src="/static/media/studiopic5.jpg" alt="Студия Sonata" onerror="this.style.display='none';"></div>
-                        <div class="gallery-slide"><img src="/static/media/studiopic8.jpg" alt="Студия Sonata" onerror="this.style.display='none';"></div>
+                        <div class="gallery-slide"><img src="/static/media/studiopic2.jpg" alt="Студия Sonata" loading="lazy" onerror="this.style.display='none';"></div>
+                        <div class="gallery-slide"><img src="/static/media/studiopic4.jpg" alt="Студия Sonata" loading="lazy" onerror="this.style.display='none';"></div>
+                        <div class="gallery-slide"><img src="/static/media/studiopic3.jpg" alt="Студия Sonata" loading="lazy" onerror="this.style.display='none';"></div>
+                        <div class="gallery-slide"><img src="/static/media/studiopic7.jpg" alt="Студия Sonata" loading="lazy" onerror="this.style.display='none';"></div>
+                        <div class="gallery-slide"><img src="/static/media/studiopic1.jpg" alt="Студия Sonata" loading="lazy" onerror="this.style.display='none';"></div>
+                        <div class="gallery-slide"><img src="/static/media/studiopic5.jpg" alt="Студия Sonata" loading="lazy" onerror="this.style.display='none';"></div>
+                        <div class="gallery-slide"><img src="/static/media/studiopic8.jpg" alt="Студия Sonata" loading="lazy" onerror="this.style.display='none';"></div>
                     </div>
                     <button class="gallery-btn prev" id="galleryPrev">&#8592;</button>
                     <button class="gallery-btn next" id="galleryNext">&#8594;</button>
@@ -977,7 +979,7 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
     window.addEventListener('scroll', () => {
       if (window.scrollY > 200) { header.classList.add('scrolled'); backTop.classList.add('show'); }
       else { header.classList.remove('scrolled'); backTop.classList.remove('show'); }
-    });
+    }, { passive: true });
 
     // Burger
     const burger = document.getElementById('burger');
@@ -1078,7 +1080,18 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
       if (overlay) overlay.addEventListener('click', () => { overlay.classList.add('hidden'); video.muted = true; video.loop = true; video.play().catch(()=>{}); isPlaying = true; syncPlayIcon(); });
       if (btnPlay) btnPlay.addEventListener('click', e => { e.stopPropagation(); if (video.paused) { if (overlay) overlay.classList.add('hidden'); video.play().catch(()=>{}); isPlaying = true; } else { video.pause(); isPlaying = false; } syncPlayIcon(); });
       if (btnMute) btnMute.addEventListener('click', e => { e.stopPropagation(); video.muted = !video.muted; if (!video.muted && video.paused) { if (overlay) overlay.classList.add('hidden'); video.play().catch(()=>{}); isPlaying = true; syncPlayIcon(); } syncMuteIcon(); });
-      card.addEventListener('mouseenter', () => { if (!isPlaying && video.paused) { video.muted = true; video.play().catch(()=>{}); } });
+      card.addEventListener('mouseenter', () => {
+        if (!isPlaying && video.paused) {
+          // Останавливаем видео в других карточках чтобы не грузить одновременно
+          document.querySelectorAll('.direction-card').forEach(c => {
+            if (c !== card && c.dataset.playing !== 'true') {
+              const v = c.querySelector('video');
+              if (v && !v.paused) { v.pause(); v.currentTime = 0; }
+            }
+          });
+          video.muted = true; video.play().catch(()=>{});
+        }
+      });
       card.addEventListener('mouseleave', () => { if (!isPlaying) { video.pause(); video.currentTime = 0; } });
       function syncPlayIcon() { const a = btnPlay&&btnPlay.querySelector('.ic-play'); const b = btnPlay&&btnPlay.querySelector('.ic-pause'); if(a) a.style.display=isPlaying?'none':''; if(b) b.style.display=isPlaying?'':'none'; }
       function syncMuteIcon() { const a = btnMute&&btnMute.querySelector('.ic-muted'); const b = btnMute&&btnMute.querySelector('.ic-unmuted'); if(a) a.style.display=video.muted?'':'none'; if(b) b.style.display=video.muted?'none':''; }
@@ -1207,7 +1220,10 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
     document.querySelectorAll('.review-video-circle').forEach(circle => {
       const video = circle.querySelector('video');
       if (!video) return;
-      circle.addEventListener('mouseenter', () => { video.muted = true; video.play().catch(()=>{}); });
+      circle.addEventListener('mouseenter', () => {
+        if (video.dataset.src && !video.getAttribute('src')) { video.setAttribute('src', video.dataset.src); video.load(); }
+        video.muted = true; video.play().catch(()=>{});
+      });
       circle.addEventListener('mouseleave', () => { if (!circle.classList.contains('playing')) { video.pause(); video.currentTime = 0; } });
       circle.addEventListener('click', () => {
         if (circle.classList.contains('playing')) { video.pause(); circle.classList.remove('playing'); }
@@ -1218,12 +1234,22 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
       });
     });
 
-    // Parallax blob
-    window.addEventListener('mousemove', e => {
+    // Parallax blob — throttled через requestAnimationFrame (было 200+/сек, стало 60/сек)
+    (function() {
       const blob = document.querySelector('.hero-accent-blob');
       if (!blob) return;
-      blob.style.transform = `translate(${(e.clientX/window.innerWidth-0.5)*40}px, ${(e.clientY/window.innerHeight-0.5)*40}px)`;
-    });
+      let rafPending = false;
+      let mx = 0, my = 0;
+      window.addEventListener('mousemove', e => {
+        mx = e.clientX; my = e.clientY;
+        if (rafPending) return;
+        rafPending = true;
+        requestAnimationFrame(() => {
+          blob.style.transform = 'translate(' + ((mx/window.innerWidth-0.5)*40) + 'px,' + ((my/window.innerHeight-0.5)*40) + 'px)';
+          rafPending = false;
+        });
+      }, { passive: true });
+    })();
 
     // =======================================================
     // LAZY VIDEO — загружаем видео только при попадании в viewport

@@ -945,8 +945,14 @@ src="https://www.facebook.com/tr?id=4502538949974052&ev=PageView&noscript=1"
         document.querySelectorAll('[data-ru]').forEach(el => {
             const val = el.dataset[lang];
             if (!val) return;
-            // Для элементов с innerHTML (если содержат HTML теги)
-            if (val.includes('<')) {
+            // Если внутри есть SVG — меняем только текстовые узлы, не трогая иконку
+            if (el.querySelector('svg')) {
+                Array.from(el.childNodes).forEach(node => {
+                    if (node.nodeType === 3 && node.textContent.trim() !== '') {
+                        node.textContent = ' ' + val;
+                    }
+                });
+            } else if (val.includes('<')) {
                 el.innerHTML = val;
             } else {
                 el.textContent = val;

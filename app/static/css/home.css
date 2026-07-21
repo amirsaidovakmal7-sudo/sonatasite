@@ -780,7 +780,6 @@
         .modal-text { font-size: 15px; color: var(--gray); line-height: 1.7; margin-bottom: 28px; }
         .modal-close { background: var(--accent); color: var(--white); font-family: var(--font-cond); font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 14px 32px; border-radius: 8px; border: none; cursor: pointer; transition: var(--transition); }
         .modal-close:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(232,93,4,0.4); }
-
         /* RESPONSIVE */
         @media (max-width: 1100px) { .pricing-grid { grid-template-columns: repeat(2, 1fr); } .direction-card { width: calc(33.33% - 14px); } }
         @media (max-width: 900px) {
